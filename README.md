@@ -23,7 +23,7 @@ Open by Downloading
 
 ## Known Bugs
 
-This application is not fully functional. No matter what the input is, "I can't answer that yet!" will be returned. 
+This application is not yet fully functional. 
 
 ## Support and contact details
 
