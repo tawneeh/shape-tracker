@@ -13,7 +13,7 @@ $(document).ready(function() {
     const length3 = parseInt($('#length3').val());
     const triangle = new Triangle(length1, length2, length3);
     const response = triangle.checkType();
-    $('#response').append(`<p>${response}</p>`);
+    $('#response').text(`${response}`);
   });
 
   $('#rectangle-area-form').submit(function(event) {

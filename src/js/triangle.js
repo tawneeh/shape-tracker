@@ -7,13 +7,13 @@ export default class Triangle {
 
   checkType() {
     if ((this.side1 > (this.side2 + this.side3)) || (this.side2 > (this.side1 + this.side3)) || (this.side3 > (this.side1 + this.side2))) {
-      return "not a triangle";
+      return "This is not a triangle...";
     } else if ((this.side1 !== this.side2) && ((this.side1 !== this.side3)) && ((this.side2 !== this.side3))) {
-      return "scalene triangle";
+      return "This forms a scalene triangle!";
     }  else if ((this.side1 === this.side2) && (this.side1 === this.side3)) {
-      return "equilateral triangle";
+      return "This forms an equilateral triangle!";
     } else {
-      return "isosceles triangle";
+      return "This forms an isosceles triangle!";
     }
   }    
-};
+}
