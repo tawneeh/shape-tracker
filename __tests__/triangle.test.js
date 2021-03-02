@@ -11,22 +11,22 @@ describe('Triangle', () => {
 
   test('should correctly determine whether three lengths are not a triangle', () => {
     const notTriangle = new Triangle(3,9,22);
-    expect(notTriangle.checkType()).toEqual("not a triangle");
+    expect(notTriangle.checkType()).toEqual("This is not a triangle...");
   });
 
   test('should correctly determine whether three lengths make a scalene triangle', () => {
     const scalTriangle = new Triangle(4,5,7)
-    expect(scalTriangle.checkType()).toEqual("scalene triangle");
+    expect(scalTriangle.checkType()).toEqual("This forms a scalene triangle!");
   });
 
   test('should correctly determine whether three lengths make an isosceles triangle', () => {
     const isocTriangle = new Triangle(5,5,7)
-  expect(isocTriangle.checkType()).toEqual("isosceles triangle");
+  expect(isocTriangle.checkType()).toEqual("This forms an isosceles triangle!");
   });
 
   test('should correctly determine whether three lengths make an equilateral triangle', () => {
     const equiTriangle = new Triangle(5,5,5)
-    expect(equiTriangle.checkType()).toEqual("equilateral triangle");
+    expect(equiTriangle.checkType()).toEqual("This forms an equilateral triangle!");
   });
 
 });
